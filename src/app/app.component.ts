@@ -7,8 +7,7 @@ import {Component, Input, Output} from '@angular/core';
 })
 export class AppComponent {
 
-  @Input()
-  public username: string;
+  username = '';
 
   resetInput() {
     this.username = '';

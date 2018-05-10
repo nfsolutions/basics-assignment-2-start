@@ -7,7 +7,7 @@
 <form #form="ngForm">
   <input type="text" name="username" [value]="username" [(ngModel)]="username">
   <p>{{username}}</p>
-  <button (click)="resetInput()" [disabled]="!username" >
+  <button (click)="resetInput()" [disabled]="username ===''" >
     reset
   </button>
 </form>
